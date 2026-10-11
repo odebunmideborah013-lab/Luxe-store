@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Luxe Store</title>
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+</head>
+
+<body>
+    <header>
+        <h1>LUXE STORE</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-page">
+            <h2>Shop Our collection</h2>
+            <p>Explore the LUXE STORE Clothing Dresses Collection, featuring <br> elegant silhouettes, maxi dresses, and
+                occasion-ready pieces.</p>
+
+            <h3>Discover pieces made to elevate your style.</h3>
+        </section>
+
+        <div class="category">
+            <button onclick="filterProducts('all')">All</button>
+            <button onclick="filterProducts('dresses')">Dresses</button>
+            <button onclick="filterProducts('tops')">Tops</button>
+            <button onclick="filterProducts('bags')">Bags</button>
+            <button onclick="filterProducts('shoes')">Shoes</button>
+            <button onclick="filterProducts('accesories')">Accessories</button>
+            <button onclick="filterProducts('trousers')">trousers</button>
+        </div>
+
+        <!-- products section -->
+        <section class="products">
+            <div class="product-card" data-category="shirt">
+
+                <a href="product.html?product=shirt">
+                    <img src="images/shirt.jpg" alt="Classic shirt">
+                </a>
+
+                <a href="product.html?product=shirt" class="product-link">
+                    <h3>Classic shirt</h3>
+                </a>
+
+                <p>₦36,000</p>
+                <button onclick="addToCart('Classic shirt' , 36000, 'images/shirt.jpg')"> Add to
+                    Cart</button>
+            </div>
+
+            <div class="product-card" data-category="tops">
+
+                <a href="product.html?product=top">
+                    <img src="images/stylish.jpg" alt="stylish top">
+                </a>
+
+                <a href="product.html?product=top"  class="product-link">
+                    <h3>Stylish Top</h3>
+                </a>
+
+                <p>₦15,000</p>
+                <button onclick="addToCart('Stylish Top' , 15000, 'images/stylish.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="bags">
+                <a href="product.html?product=bag">
+                    <img id="product-image" src="images/bags.jpg" alt="Fashion bags">
+                </a>
+
+                <a href="product.html?product=bag"  class="product-link">
+                    <h3 id="product-name">Classic Bag</h3>
+                </a>
+                <p id="product-price">₦26,000</p>
+                <button onclick="addToCart('Classic Bag' , 26000, 'images/bags.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="shoes">
+
+                <a href="product.html?product=shoes">
+                    <img id="product-image" src="/images/heel3.jpg" alt="Elegant Heels">
+                </a>
+
+                <a href="product.html?product=shoes"  class="product-link">
+                    <h3 id="product-name">Elegant Heels</h3>
+                </a>
+
+                <p id="product-price">₦18,000</p>
+                <button onclick="addToCart('Elegant Heel' , 18000, 'images/heel3.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="trousers">
+
+                <a href="product.html?product=trousers">
+                    <img id="product-image" src="/images/pants.webp" alt="Classic Trousers">
+                </a>
+
+                    <a href="product.html?product=trousers"  class="product-link">
+                        <h3 id="product-name">Classic Trousers</h3>
+                    </a>
+                <p id="product-price">₦22,000</p>
+                <button onclick="addToCart('Classic Trousers' , 22000, 'images/trousers.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="dresses">
+
+                <a href="product.html?product=blackdress">
+                    <img id="product-image" src="/images/jokeblack.png" alt="jokeblack dress">
+                </a>
+
+                <a href="product.html?product=blackdress"  class="product-link">
+                    <h3 id="product-name">JOKE PEEP DRESS - BLACK</h3>
+                </a>
+                <p id="product-price">₦38,000</p>
+                <button onclick="addToCart('JOKE PEEP DRESS - BLACK' , 38000, '/images/jokeblack.png')">Add to
+                    Cart</button>
+            </div>
+
+            <div class="product-card" data-category="accesories">
+
+                <a href="product.html?product=accesories">
+                    <img id="product-image" src="images/accessory.jpg" alt="Fashion accesories">
+                </a>
+
+                <a href="product.html?product=accesories"  class="product-link">
+                    <h3 id="product-name">Fashion Accessories</h3>
+                </a>
+                <p id="product-price">₦10,000</p>
+                <button onclick="addToCart('Fashion Accessory' , 10000, 'images/accesory.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="dresses">
+
+                <a href="product.html?product=Freyadress">
+                    <img id="product-image" src="images/dresses.jpg" alt="Freya dress">
+                </a>
+
+                <a href="product.html?product=Freyadress"  class="product-link">
+                    <h3 id="product-name">Freya dress</h3>
+                </a>
+                <p id="product-price">₦30,000</p>
+                <button onclick="addToCart('Freya dress' , 30000, 'images/dresses.jpg')">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card" data-category="dresses">
+
+                <a href="product.html?product=Carnivaldress">
+                    <img id="product-image" src="images/carnival.jpg" alt="Carnival dress">
+                </a>
+
+                <a href="product.html?product=Carnivaldress"  class="product-link">
+                    <h3 id="product-name">Carnival dress</h3>
+                </a>
+                <p id="product-price">₦20,000</p>
+                <button onclick="addToCart('Carnival dress' , 20000, 'images/carnival.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="dresses">
+
+                <a href="product.html?product=Eveningdress">
+                    <img id="product-image" src="images/dress.jpg" alt="Evening dress">
+                </a>
+
+                <a href="product.html?product=Eveningdress"  class="product-link">
+                    <h3 id="product-name">Evening dress</h3>
+                </a>
+                <p id="product-price">₦60,000</p>
+                <button onclick="addToCart('Evening dress' , 60000, 'images/dress.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="dresses">
+
+                <a href="product.html?product=Whitedress">
+                    <img id="product-image" src="images/alba_white.jpg" alt="ALBA ZUKI SKIRT SET - WHITE dress">
+                </a>
+
+                <a href="product.html?product=Whitedress"  class="product-link">
+                    <h3 id="product-name">ALBA ZUKI SKIRT SET - WHITE</h3>
+                </a>
+                <p id="product-price">₦60,000</p>
+                <button onclick="addToCart('ALBA ZUKI SKIRT SET - WHITE' , 60000, 'images/alba_white.jpg')">Add to
+                    Cart</button>
+            </div>
+
+            <div class="product-card" data-category="dresses">
+
+                <a href="product.html?product=Knotdress">
+                    <img id="product-image" src="images/nolanimeshdresspink.png" alt="ALBA ZUKI SKIRT SET - WHITE dress">
+                </a>
+
+                <a href="product.html?product=Knotdress"  class="product-link">
+                    <h3 id="product-name">NOLANI KNOT DRESS - PINK</h3>
+                </a>
+                <p id="product-price">₦60,000</p>
+                <button onclick="addToCart('NOLANI KNOT DRESS - PINK' , 60000, 'images/nolanimeshdresspink.png')">Add to
+                    Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>LUXE STORE</h2>
+                <p>Simple. Elegant. Made for you.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="cart.html">Cart</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: luxestore@gmail.com</p>
+                <p>phone: +234 9138644636</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>@ 2026 LUXE STORE. All rights reserved.</p>
+        </div>
+
+         <div class="footer-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

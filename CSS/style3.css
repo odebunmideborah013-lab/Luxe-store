@@ -1,0 +1,167 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+nav{
+    display: flex;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+/* check out page */
+.check-out-section {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.check-out-section h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.checkout-form{
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.checkout-form label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.checkout-form input, 
+.checkout-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.checkout-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.payment-method{
+    margin-top: 25px;
+}
+
+.payment-method label{
+    font-weight: normal;
+}
+
+.checkout-form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout-form button :hover {
+    background: #333;
+}
+
+/* footer */
+.footer {
+    background: #111;
+    color: white;
+    padding: 60px 60px 20px;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer h2 {
+    margin-bottom: 15px;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links a :hover {
+    color: white;
+}
+
+.footer-contact p {
+    font-size: 13px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+@media (max-width: 400px) {
+    .footer {
+        padding: 50px 15px 20px;
+    }
+
+    .footer-contact p {
+        font-size: 13px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+}
+
+html,
+body {
+    overflow-x: hidden;
+}

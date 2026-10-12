@@ -141,7 +141,7 @@ const productData = {
     shoes: {
         name: "Elegant Heels",
         price: 18000,
-        image: "/images/heel3.jpg",
+        image: "images/heel3.jpg",
         relatedImages: [
             "images/heel1.jpg",
             "images/heel2.jpg",
@@ -153,7 +153,7 @@ const productData = {
     trousers: {
         name: "Classic Trousers",
         price: 22000,
-        image: "/images/pants.webp",
+        image: "images/pants.webp",
         relatedImages: [
             "images/pants1.jpg",
             "images/pants2.jpg",
@@ -165,7 +165,7 @@ const productData = {
     blackdress: {
         name: "JOKE PEEP DRESS - BLACK",
         price: 38000,
-        image: "/images/jokeblack.png",
+        image: "images/jokeblack.png",
         relatedImages: [
             "images/maxi1.jpg",
             "images/lucy3.jpg",

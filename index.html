@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+</head>
+
+<body>
+    <!-- the header -->
+    <header>
+        <h1>LUXE STORE</h1>
+
+        <!-- menu links -->
+        <nav>
+            <ul class="menu-list">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="shop.html">Shop</a></li>
+                <li> <a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>Discover Your style</h1>
+                <p>Shop our latest collection and find something made for you.</p>
+
+                <a href="shop.html" class="hero-btn">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- products section -->
+        <section class="products">
+            <h2>New Arrivals</h2>
+
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="images/elegant dress.jpg" alt="beautiful dress">
+                    <h3>Elegant Dress</h3>
+                    <p>NGN 25,000</p>
+                    <button onclick="addToCart('Elegant Dress' , 25000, 'images/elegant dress.jpg')"> Add to
+                        Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/stylish.jpg" alt="stylish top">
+                    <h3>Stylish Top</h3>
+                    <p>NGN 15,000</p>
+                    <button onclick="addToCart('Stylish Top' , 15000, 'images/stylish.jpg')">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/bags.jpg" alt="Fashion bags">
+                    <h3>Classic Bag</h3>
+                    <p>NGN 20,000</p>
+                    <button onclick="addToCart('Classic Bag' , 20000, 'images/bags.jpg')">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/heel1.jpg" alt="Elegant Heels">
+                    <h3>Elegant Heels</h3>
+                    <p> NGN 28,000</p>
+                    <button onclick="addToCart('Elegant Heels' , 18000, 'images/heel.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- about us -->
+
+        <section class="about">
+            <div class="about-image">
+                <img src="images/hero.jpg" alt="LUXE STORE fashion">
+            </div>
+
+            <div class="about-content">
+                <h2>About LUXE STORE</h2>
+                <p>At LUXE STORE, we believe fashion should be simple, elegant, and made for you.</p>
+                <p>Discover carefully selected pieces that help you express your unique style with confidence.</p>
+                <a href="shop.html" class="about-btn">Explore Collection</a>
+            </div>
+        </section>
+
+        <section class="why-shop">
+            <h2>Why Shop With Us?</h2>
+            <p class="why-intro">We make your shopping experience simple, stylish and enjoyable.</p>
+
+            <div class="benefit-container">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><img src="images/star.jpg" alt="star"></div>
+                    <h3>Quality Products</h3>
+                    <p>Carefully selected pieces made with style and quality in mind</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon"><img src="images/truck.jpg" alt="truck"></div>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your favourite pieces delivered conveniently to you.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon"><img src="images/padlock.jpg" alt="padlock"></div>
+                    <h3>Secure shopping</h3>
+                    <p>Shop with confidence through a simple and secure experience.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon"><img src="images/message.jpg" alt="message"></div>
+                    <h3>Customer Support</h3>
+                    <p>we're here to help whenever you have questions about your order.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Stay in the Loop</h2>
+            <p>Subscribe to get updates about our latest collections and offers.</p>
+
+            <form class="newsletter-form" onsubmit="subscribe(event)">
+                <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>LUXE STORE</h2>
+                <p>Simple. Elegant. Made for you.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="cart.html">Cart</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: luxestore@gmail.com</p>
+                <p>phone: +234 9138644636</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>@ 2026 LUXE STORE. All rights reserved.</p>
+        </div>
+
+         <div class="footer-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </footer>
+    <script src="script.js"> </script>
+</body>
+
+</html>
